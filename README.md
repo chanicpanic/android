@@ -64,3 +64,5 @@ New to Chanic Panic? Learn how to play [here](https://chanicpanic.com/reference)
 ## License
 
 This app is under [GPLv3](LICENSE).
+
+Google Play and the Google Play logo are trademarks of Google LLC.
