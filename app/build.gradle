@@ -34,7 +34,7 @@ android {
         applicationId "com.chanicpanic.chanicpanicmobile"
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 101
+        versionCode 102
         versionName "1.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
