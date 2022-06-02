@@ -121,13 +121,15 @@ public class BoardSpinnerAdapter extends ArrayAdapter<Player> {
             TextView teams = v.findViewById(R.id.tvTeam);
             String text = "Team " + (Game.getInstance().getPlayer(position).getStartingTurn() % Game.getInstance().getTeams() + 1);
             text += "\nTeammates: " + Game.getInstance().teammatesOf(position).size();
-            int presence = Game.getInstance().getPlayer(position).getPresence();
-            List<Player> teammates = Game.getInstance().teammatesOf(position);
-            for (Player p : teammates) {
-                presence += p.getPresence();
+            if (Game.getInstance().isPresenceActive()) {
+                int presence = Game.getInstance().getPlayer(position).getPresence();
+                List<Player> teammates = Game.getInstance().teammatesOf(position);
+                for (Player p : teammates) {
+                    presence += p.getPresence();
+                }
+                presence /= teammates.size() + 1;
+                text += "\nTeam Presence: " + presence;
             }
-            presence /= teammates.size() + 1;
-            text += "\nTeam Presence: " + presence;
             teams.setText(text);
             teams.setTextColor(getContext().getResources().getColor(GameScreen.TEAM_COLORS[Game.getInstance().getTeamColorIndex(Game.getInstance().getPlayer(position).getStartingTurn() % Game.getInstance().getTeams())]));
 
