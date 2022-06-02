@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<com.chanicpanic.chanicpanicmobile.gamescreen.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    style="@style/AppTheme.CardView"
+    tools:background="@drawable/background_card_heart"
+    tools:drawableTop="@drawable/icon_heart_trimmed"
+    tools:paddingTop="8dp"
+    tools:text="10" />
+
+

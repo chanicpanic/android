@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<android.widget.Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.AbilityButton"
+    android:layout_gravity="center_vertical|end"
+    android:layout_marginEnd="@dimen/default_margin"
+    android:background="@drawable/ability_button"
+    tools:text="A">
+
+</android.widget.Button>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="teams">Teams</string>
+
+    <string name="playerCount">Players</string>
+
+    <string name="turn">Turn</string>
+
+    <string name="name">Name</string>
+
+    <string name="humanocpu">Human  - o -  CPU</string>
+
+    <string name="top">Top</string>
+
+    <string name="bottom">Bottom</string>
+
+    <string name="Default">Default</string>
+
+
+    <string name="preference_end_turn_title">Secure End Turn</string>
+    <string name="preference_end_turn_summary">When turned on, the End Turn button must be double-tapped.</string>
+
+    <string name="preference_card_title">Card Skin</string>
+
+    <string name="preference_trader_title">Trader</string>
+
+    <string name="preference_ally_title">Ally</string>
+    <string name="preference_ally_summary">(Only in 2v2)</string>
+
+    <string name="preference_panic_title">Panic</string>
+
+    <string name="preference_specialAbilities_title">Special Abilities</string>
+    <string name="preference_specialAbilities_summary">The number of special abilities given to each player</string>
+
+    <string name="preference_sortHand_title">Sort Hand</string>
+    <string name="preference_sortHand_summary">Your hand is automatically sorted by suit and then value.</string>
+
+    <string name="preference_presence_title">Presence</string>
+
+    <string name="open_source">Open Source Notices</string>
+    <string name="credits">Credits</string>
+    <string name="licenses">Licenses</string>
+    <string name="quick_game_preferences">Quick Game Settings</string>
+    <string name="privacy">Privacy</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="presence">Presence</string>
+</resources>

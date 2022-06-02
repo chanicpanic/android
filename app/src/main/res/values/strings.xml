@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="app_name" translatable="false">Chanic Panic</string>
+
+    <string name="version">version 1.1.0</string>
+
+    <string name="chanic_panic_trademarked" translatable="false">Chanic Panic™</string>
+
+    <string name="copyright_notice" translatable="false">©2022</string>
+
+    <string name="hearts">Hearts</string>
+
+    <string name="diamonds">Diamonds</string>
+
+    <string name="spades">Spades</string>
+
+    <string name="clubs">Clubs</string>
+
+    <string name="stars">Stars</string>
+
+    <string name="email" translatable="false"><a href="mailto:support@chanicpanic.com">support@chanicpanic.com</a></string>
+
+    <string name="privacy_uri" translatable="false">file:///android_asset/privacy_policy.html</string>
+    <string name="terms_uri" translatable="false">file:///android_asset/terms_and_conditions.html</string>
+
+</resources>

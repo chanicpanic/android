@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boardAttackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:animateLayoutChanges="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/topBackground"
+        android:layout_width="@dimen/board_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background_board_hearts"
+        android:minHeight="@dimen/CardView_container_minHeight">
+
+        <com.chanicpanic.chanicpanicmobile.gamescreen.CardGroupView
+            android:id="@+id/top"
+            style="@style/AppTheme.CardGroupView"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/middleBackground"
+        android:layout_width="@dimen/board_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background_board_diamonds"
+
+        android:minHeight="@dimen/CardView_container_minHeight">
+
+        <com.chanicpanic.chanicpanicmobile.gamescreen.CardGroupView
+            android:id="@+id/middle"
+            style="@style/AppTheme.CardGroupView"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+        </com.chanicpanic.chanicpanicmobile.gamescreen.CardGroupView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/boardSwitches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtAutoSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:text="@string/auto_select"
+
+            android:textSize="@dimen/_16sdp"
+            android:visibility="visible" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtBypass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0"
+            android:enabled="true"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:text="@string/bypass"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomBackground"
+        android:layout_width="@dimen/board_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_board_spades"
+        android:minHeight="@dimen/CardView_container_minHeight">
+
+        <com.chanicpanic.chanicpanicmobile.gamescreen.CardGroupView
+            android:id="@+id/bottom"
+            style="@style/AppTheme.CardGroupView"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+    </FrameLayout>
+
+</LinearLayout>

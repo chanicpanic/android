@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="instructions_group_overview">Overview</string>
+    <string name="instructions_overview0">Chanic Panic is a turn-based card battle game.</string>
+    <string name="instructions_overview1">Sharing the same deck, players set up defenses and then proceed to attack opponents.</string>
+    <string name="instructions_overview2">A player or team wins when all opponents have been eliminated.</string>
+
+    <string name="instructions_group_deck">The Deck</string>
+    <string name="instructions_deck0">Card Suits:\n\nHearts ♥: These are health. If a player’s health becomes zero or less because of an attack, that player is eliminated.\n\nDiamonds ♦: These are shields. A player must destroy all Diamonds controlled by an opponent before being able to attack the Hearts with full power.\n\nSpades ♠: These are weapons. They are used to attack and destroy Diamonds and Hearts.\n\nClubs ♣: These are resources. They are used to draw and play more cards.</string>
+    <string name="instructions_deck1">Card Classifications:\n\nEach type of card is classified as one of the following:\n\nUtility Cards (Hearts, Diamonds, Spades): These are played on the Board.\n\nResource Cards (Clubs): These are played on the Discard Pile.</string>
+    <string name="instructions_deck2">Card Attributes:\n\nValue: Each card has a value equal to the number on it. Values range from 1 to 10.\n\nCost: This only applies to Utility Cards. A card costs a number of Points to play equal to its value.</string>
+
+    <string name="instructions_group_turn">The Turn</string>
+    <string name="instructions_turn0">Each turn is structured as follows:\n\n\t\t1. Draw Phase\n\t\t2. Standby Phase\n\t\t3. Point Phase\n\t\t4. Club Phase\n</string>
+    <string name="instructions_turn1">Draw Phase: On the first turn a player draws 5 cards. On all subsequent turns a player draws 1 card.\n\nStandby Phase: This is a time for abilities to activate.\n\nPoint Phase: A player starts each turn with 12 Points. During this time, players pay points to play Utility Cards. Points do not carry over from turn to turn.\n\nClub Phase: This begins as soon as a player plays a Club. At this time, Points are lost and the properties of Clubs come into effect.</string>
+
+    <string name="instructions_group_board">The Board</string>
+    <string name="instructions_board0">Each player has a board with rows of the 3 Utility Cards (Hearts, Diamonds, and Spades).</string>
+    <string name="instructions_board1">Up to 3 cards of the same suit can be on the board at a time.</string>
+    <string name="instructions_board2">Once on the board, cards cannot be returned to the hand.</string>
+
+    <string name="instructions_group_playing">Playing Cards</string>
+    <string name="instructions_playing0">Utility Cards: These are played by paying the appropriate number of points or by the effect of a Club as long as 3 cards of the respective suit are not already on the board.</string>
+    <string name="instructions_playing1">Spades cannot be played until the 3rd round.</string>
+    <string name="instructions_playing2">Resource Cards: Clubs: These may be played at any time during the Point Phase and thereby end it.\n\n When a Club is played:\n\n\t\tIf it has a value of 1–5: Draw 2 cards.\n\t\tIf it has a value of 6–10: Draw 1 card.\n\nThen 1 card with a value less than or equal to the value of the Club may be played.</string>
+
+    <string name="instructions_group_attacking">Attacking</string>
+    <string name="instructions_attacking0">Attacks are the way Diamonds and Hearts are destroyed and players are eliminated.</string>
+    <string name="instructions_attacking1">Only Spades on the board may be used to attack.</string>
+    <string name="instructions_attacking2">Players may not attack until the 3rd round.</string>
+    <string name="instructions_attacking3">A player may attack at any time during the Point or Club Phase.</string>
+    <string name="instructions_attacking4">A player may not attack without destroying at least 1 Diamond or Heart but is never required to attack.</string>
+    <string name="instructions_attacking5">To destroy a card, any combination of spade values must be greater than or equal to any combination of an opponent’s Diamond or Heart values.</string>
+    <string name="instructions_attacking6">All opponent Diamonds must be destroyed before attacking the Hearts with full power.</string>
+    <string name="instructions_attacking7">Shield Bypassing: This is a special attack that becomes available starting the 4th round. A player may ignore an opponent’s Diamonds and attack the Hearts directly. However, the attack power is cut in half and rounded down if necessary.</string>
+    <string name="instructions_attacking8">After an attack, all Spades used, and all Diamond and Hearts destroyed are discarded.</string>
+
+    <string name="instructions_group_abilities">Abilities</string>
+    <string name="instructions_abilities0">Each player has the following abilities:</string>
+    <string name="instructions_abilities1">Trader: Discard 2 cards: Draw 1 card.</string>
+    <string name="instructions_abilities2">Ally (when playing in teams): Once per turn: Give a card from your hand to your next teammate.</string>
+
+    <string name="instructions_group_additional">Additional Rules</string>
+    <string name="instructions_additional0">Full Hand: A player may never hold more than 8 cards. Cards are not drawn or added to the hand if it contains 8 cards.</string>
+    <string name="instructions_additional1">When the deck runs out, the discard pile is shuffled and becomes the deck.</string>
+
+    <string name="instructions_group_interface">Interface Essentials</string>
+    <string name="instructions_interface0">Playing Cards:\n\nTap on a card in your hand to select/deselect it.\n\nTap Confirm to play it.</string>
+    <string name="instructions_interface1">Viewing Boards:\n\nSwipe or press the right and left arrows to switch board views.\n\nPress the board info in the bottom left corner to bring up a list of all the boards and quickly jump to one.</string>
+    <string name="instructions_interface2">Attacking:\n\nSwitch to the board of an opponent.\n\nIf it is the 3rd round or later, an Attack button will appear between the End Turn and Confirm buttons.\n\nPress Attack. \n\nThe board will change to show your Spades.\n\nTap your Spades to choose which ones you want to use to attack.\n\nThe Diamonds/Hearts that would be destroyed based on your selection will be highlighted.\n\nThe info at the top of the screen will tell you the attack’s power, damage, and efficiency.\n\nPress Confirm to carry out the attack.</string>
+
+    <string name="instructions_group_presence">Presence</string>
+    <string name="instructions_presence0">Presence is an optional Chanic Panic Mechanic that adds a secondary win condition to the game.</string>
+    <string name="instructions_presence1">During the Standby Phase, the turn player gains 2 Presence for each card controlled.</string>
+    <string name="instructions_presence2">Presence accumulates over the course of the game.</string>
+    <string name="instructions_presence3">A player wins when 200 Presence is obtained.</string>
+
+    <string name="instructions_group_confused">Still Confused?</string>
+    <string name="instructions_confused0">See <a href="chanicpanic.com/app/reference">chanicpanic.com/app/reference</a> for more detailed instructions.\n\nOr, send your questions to support@chanicpanic.com.</string>
+
+</resources>

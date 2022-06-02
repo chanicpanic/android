@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/PREF_END_TURN_KEY"
+        android:summary="@string/preference_end_turn_summary"
+        android:title="@string/preference_end_turn_title" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/PREF_SORT_HAND_KEY"
+        android:title="@string/preference_sortHand_title"
+        android:summary="@string/preference_sortHand_summary" />
+
+
+    <com.chanicpanic.chanicpanicmobile.settings.CardSkinPreference
+        android:key="@string/PREF_CARD_KEY"
+        android:title="@string/preference_card_title" />
+
+
+    <Preference
+        android:fragment="com.chanicpanic.chanicpanicmobile.settings.QuickGamePreferenceFragment"
+        android:title="@string/quick_game_preferences" />
+
+    <Preference
+        android:fragment="com.chanicpanic.chanicpanicmobile.settings.PrivacyPreferenceFragment"
+        android:title="@string/privacy"/>
+
+
+    <Preference
+        android:fragment="com.chanicpanic.chanicpanicmobile.settings.AboutPreferencesFragment"
+        android:title="@string/about"/>
+
+</androidx.preference.PreferenceScreen>

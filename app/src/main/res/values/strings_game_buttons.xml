@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="activate">Activate</string>
+
+    <string name="end_turn">End Turn</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="attack">Attack</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="bypass">Bypass</string>
+
+    <string name="tap_again">Tap Again</string>
+    <string name="auto_select">Auto-Select</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:selectable="false"
+        android:title="@string/app_name" />
+    <Preference
+        android:selectable="false"
+        android:title="@string/version" />
+    <Preference
+        android:selectable="false"
+        android:title="@string/copyright_notice" />
+    <Preference
+        android:enabled="false"
+        android:shouldDisableView="false"
+        android:title="Support"
+        android:widgetLayout="@layout/preference_support" />
+
+    <Preference
+        android:fragment="com.chanicpanic.chanicpanicmobile.settings.CreditsPreferenceFragment"
+        android:title="@string/credits"/>
+
+</androidx.preference.PreferenceScreen>

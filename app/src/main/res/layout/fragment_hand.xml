@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/handHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/btnLeftArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/icon_left_chevron"
+        android:visibility="invisible" />
+
+    <com.chanicpanic.chanicpanicmobile.gamescreen.CardGroupView
+        android:id="@+id/hand"
+        style="@style/AppTheme.CardGroupView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_weight="12" />
+
+    <Button
+        android:id="@+id/btnRightArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/icon_right_chevron"
+        android:visibility="invisible" />
+</LinearLayout>

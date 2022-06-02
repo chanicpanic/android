@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPreferenceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Default" />
+
+    <com.flask.colorpicker.ColorPickerView
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alphaSlider="false"
+        app:density="10"
+        app:lightnessSlider="true"
+        app:lightnessSliderView="@+id/lightnessSlider"
+        app:wheelType="FLOWER" />
+
+    <com.flask.colorpicker.slider.LightnessSlider
+        android:id="@+id/lightnessSlider"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        android:id="@+id/cardPreviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btnToggle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="@string/top"
+            android:textOn="@string/bottom" />
+
+        <Button
+            android:id="@+id/cardPreview"
+            style="@style/AppTheme.CardView"
+            android:layout_width="@dimen/CardView_width"
+            android:layout_height="@dimen/CardView_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin" />
+
+    </LinearLayout>
+
+</android.widget.LinearLayout>

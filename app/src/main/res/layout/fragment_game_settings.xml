@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="settings"
+            type="com.chanicpanic.chanicpanicmobile.menu.GameSettingsModel" />
+        <variable
+            name="fragment"
+            type="com.chanicpanic.chanicpanicmobile.menu.GameSettingsFragment" />
+    </data>
+    <android.widget.LinearLayout
+        android:id="@+id/settingsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="142dp"
+        android:orientation="vertical"
+        tools:context="com.chanicpanic.chanicpanicmobile.menu.GameSettingsFragment">
+
+        <TextView
+            android:id="@+id/lblPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/playerCount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:onItemSelected="@{fragment::onPlayersSelected}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPlayers" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtTeams"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onCheckedChanged="@{fragment::onTeamsChecked}"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="@string/teams"
+            android:textColorLink="@android:color/holo_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnPlayers" />
+
+        <Spinner
+            android:id="@+id/spnTeams"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:focusableInTouchMode="false"
+            android:gravity="top"
+            android:onItemSelected="@{fragment::onTeamsSelected}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtTeams" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/lblBaseAbilities"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="@string/abilities_base"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtAbilities" />
+
+        <CheckBox
+            android:id="@+id/cbxTrader"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:checked="@={settings.isTraderActive}"
+            android:text="@string/ability_name_trader"
+            android:textColorLink="@android:color/holo_purple"
+            android:tooltipText="@string/ability_description_trader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblBaseAbilities" />
+
+        <CheckBox
+            android:id="@+id/cbxAlly"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:enabled="@{swtTeams.checked}"
+            android:checked="@{settings.isAllyActive() &amp;&amp; cbxAlly.enabled}"
+            android:onCheckedChanged="@{fragment::onAllyChecked}"
+            android:text="@string/ability_name_ally"
+            android:tooltipText="@string/ability_description_ally"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbxTrader" />
+
+        <CheckBox
+            android:id="@+id/cbxPanic"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:checked="@={settings.isPanicActive()}"
+            android:text="@string/ability_name_panic"
+            android:tooltipText="@string/ability_description_panic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbxTrader" />
+
+        <TextView
+            android:id="@+id/lblAdditionalAbilities"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="@string/abilities_special"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbxAlly" />
+
+        <Spinner
+            android:id="@+id/spnAbilities"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:onItemSelected="@{fragment::onAbilitiesSelected}"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtPresence"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_weight="1"
+            android:checked="@={settings.isPresenceActive()}"
+            android:text="@string/presence" />
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:onClick="@{fragment::start}"
+            android:text="@string/Continue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </android.widget.LinearLayout>
+</layout>

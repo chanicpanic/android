@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="deck">Deck:</string>
+
+    <string name="discard_pile">Discard Pile:</string>
+
+    <string name="attack_power">Attack Power:</string>
+
+    <string name="efficiency">Efficiency:</string>
+
+    <string name="damage">Damage:</string>
+
+    <string name="phase">Phase</string>
+
+    <string name="points">Points:</string>
+
+    <string name="round">Round:</string>
+
+    <string name="last_club">Last Club:</string>
+
+    <string name="game_over">Game Over</string>
+
+    <string name="win">wins</string>
+
+    <string name="team">Team</string>
+
+    <string name="bypassed">bypassed</string>
+
+    <string name="attacked">attacked</string>
+
+    <string name="with">with</string>
+
+    <string name="destroyed">destroyed</string>
+
+    <string name="eliminated">has been eliminated</string>
+
+    <string name="no_cards">No Cards</string>
+
+    <string name="log">Game Log</string>
+
+    <string name="dialog_menu_title">Are you sure?</string>
+
+    <string name="dialog_menu_message">If you return to the main menu, any action you have taken this turn will not be saved.</string>
+
+    <string name="dialog_panic_title">Are you sure you want to Panic?</string>
+
+    <string name="dialog_panic_message">You will lose ALL your Spades and your turn will end.</string>
+
+    <string name="turn_log">Turn:</string>
+    <string name="phases">Phases</string>
+    <string name="draws">Draws</string>
+    <string name="plays">Plays</string>
+    <string name="discards">Discards</string>
+    <string name="attacks">Attacks</string>
+
+</resources>

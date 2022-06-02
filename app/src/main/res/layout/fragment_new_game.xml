@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chanicpanic.chanicpanicmobile.menu.NewGameFragment">
+
+    <Button
+        android:id="@+id/btn1v1"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/oneVone"
+        android:textSize="@dimen/_24sdp" />
+
+    <Button
+        android:id="@+id/btn1v1v1"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/oneVoneVone"
+        android:textSize="@dimen/_24sdp" />
+
+    <Button
+        android:id="@+id/btn2v2"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/twoVtwo"
+        android:textSize="@dimen/_24sdp" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/custom"
+        android:textSize="@dimen/_24sdp" />
+</android.widget.LinearLayout>

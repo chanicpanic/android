@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+    <dimen name="CardView_width">@dimen/_35sdp</dimen>
+    <dimen name="CardView_height">@dimen/_54sdp</dimen>
+
+    <dimen name="default_margin">@dimen/_10sdp</dimen>
+    <dimen name="default_text_size">@dimen/_12sdp</dimen>
+    <dimen name="CardView_text_size">@dimen/_20sdp</dimen>
+
+    <dimen name="CardView_container_minHeight">@dimen/_70sdp</dimen>
+    <dimen name="ability_button_diameter">@dimen/_37sdp</dimen>
+
+    <dimen name="board_frame_width">@dimen/_200sdp</dimen>
+
+    <dimen name="pager_background_gradient_radius">@dimen/_230sdp</dimen>
+    <dimen name="board_background_gradient_radius">@dimen/_115sdp</dimen>
+
+</resources>

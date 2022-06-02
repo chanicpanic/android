@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameScreenFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.chanicpanic.chanicpanicmobile.gamescreen.GameScreen">
+
+    <LinearLayout
+        android:id="@+id/gameScreenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:id="@+id/frameInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25" />
+
+        <FrameLayout
+            android:id="@+id/frameCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/frameBoard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <com.chanicpanic.chanicpanicmobile.gamescreen.BoardViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/boardArrows"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btnBoardLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_left_chevron" />
+
+                <Space
+                    android:id="@+id/spaceBoard"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:id="@+id/btnBoardRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_right_chevron" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameHand"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEndTurn"
+                style="@style/AppTheme.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/icon_end"
+                android:text="@string/end_turn" />
+
+            <Button
+                android:id="@+id/btnAttack"
+                style="@style/AppTheme.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/icon_attack"
+                android:enabled="false"
+                android:text="@string/attack"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/AppTheme.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/icon_confirm"
+                android:enabled="false"
+                android:text="@string/confirm" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8" />
+
+    </LinearLayout>
+</FrameLayout>
+
+

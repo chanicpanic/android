@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="Quick-Game Settings"
+    app:summary="Customize the settings of the Quick-Game buttons.">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="@string/PREF_PRESENCE_KEY"
+        app:title="@string/preference_presence_title" />
+
+    <CheckBoxPreference
+        app:defaultValue="true"
+        app:key="@string/PREF_TRADER_KEY"
+        app:title="@string/preference_trader_title" />
+
+    <CheckBoxPreference
+        app:defaultValue="true"
+        app:key="@string/PREF_ALLY_KEY"
+        app:title="@string/preference_ally_title"
+        app:summary="@string/preference_ally_summary" />
+
+    <CheckBoxPreference
+        app:defaultValue="false"
+        app:key="@string/PREF_PANIC_KEY"
+        app:title="@string/preference_panic_title" />
+
+    <ListPreference
+        app:defaultValue="0"
+        app:entries="@array/SpecialAbilitiesValues"
+        app:entryValues="@array/SpecialAbilitiesValues"
+        app:key="@string/PREF_SPECIAL_ABILITIES_KEY"
+        app:title="@string/preference_specialAbilities_title"
+        app:summary="@string/preference_specialAbilities_summary" />
+</PreferenceScreen>

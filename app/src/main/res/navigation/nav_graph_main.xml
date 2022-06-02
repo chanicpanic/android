@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main.xml"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_newGameFragment"
+            app:destination="@id/newGameFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_loadGameFragment"
+            app:destination="@id/loadGameFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_settingsActivity"
+            app:destination="@id/settingsActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/newGameFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.NewGameFragment"
+        android:label="NewGameFragment" >
+        <action
+            android:id="@+id/action_newGameFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_newGameFragment_to_playerSettingsFragment"
+            app:destination="@id/playerSettingsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadGameFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.LoadGameFragment"
+        android:label="LoadGameFragment" >
+        <action
+            android:id="@+id/action_loadGameFragment_to_gameScreen"
+            app:destination="@id/gameScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.InstructionsFragment"
+        android:label="InstructionsFragment" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.chanicpanic.chanicpanicmobile.settings.SettingsActivity"
+        android:label="SettingsActivity" />
+    <fragment
+        android:id="@+id/gameSettingsFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.GameSettingsFragment"
+        android:label="GameSettingsFragment" >
+        <action
+            android:id="@+id/action_gameSettingsFragment_to_playerSettingsFragment"
+            app:destination="@id/playerSettingsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerSettingsFragment"
+        android:name="com.chanicpanic.chanicpanicmobile.menu.PlayerSettingsFragment"
+        android:label="PlayerSettingsFragment" >
+        <action
+            android:id="@+id/action_playerSettingsFragment_to_gameScreen"
+            app:destination="@id/gameScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/gameScreen"
+        android:name="com.chanicpanic.chanicpanicmobile.gamescreen.GameScreen"
+        android:label="activity_game_screen"
+        tools:layout="@layout/activity_game_screen" />
+</navigation>

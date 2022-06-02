@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCardFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:tag="piles">
+
+    <com.chanicpanic.chanicpanicmobile.gamescreen.CardView
+        android:id="@+id/viewDeck"
+        style="@style/AppTheme.CardView"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+    <com.chanicpanic.chanicpanicmobile.gamescreen.CardView
+        android:id="@+id/viewDiscard"
+        style="@style/AppTheme.CardView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/background_card_border"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:id="@+id/lblDiscard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_weight="1"
+        android:text="@string/discard_pile"
+        tools:text="Deck:\n\nDiscard Pile:" />
+
+    <ImageButton
+        android:id="@+id/btnHelp"
+        style="@style/AppTheme.Button"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/icon_help_24"
+        android:contentDescription="@string/how_to_play" />
+
+    <ImageButton
+        android:id="@+id/btnLog"
+        style="@style/AppTheme.Button"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/icon_log"
+        android:contentDescription="@string/game_log" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        style="@style/AppTheme.Button"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:srcCompat="@drawable/icon_home"
+        android:contentDescription="@string/main_menu" />
+
+</android.widget.LinearLayout>

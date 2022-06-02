@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNewTurn"
+    style="AppTheme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutNavButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMainMenu"
+            style="@style/AppTheme.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/icon_home"
+            android:onClick="onMenuClicked"
+            android:text="@string/main_menu" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/logFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <include
+            android:id="@+id/includeLog"
+            layout="@layout/game_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15sdp"
+        tools:text="Player 1\nRound 1" />
+
+    <LinearLayout
+        android:id="@+id/layoutTurnButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAutoPlay"
+            style="@style/AppTheme.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/icon_auto"
+            android:onClick="onAutoPlayClicked"
+            android:text="@string/auto_play"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBarTurn"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Space
+            android:id="@+id/newTurnSpace"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnStartTurn"
+            style="@style/AppTheme.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/icon_play"
+            android:onClick="onStartClicked"
+            android:text="@string/start"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+    <color name="colorPrimary">#6d40ac</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#9e68c4</color>
+    <color name="heart_background">#009402</color>
+    <color name="diamond_background">#969600</color>
+    <color name="spade_background">#0f58b7</color>
+    <color name="club_background">#b16200</color>
+    <color name="team1">#008e00</color>
+    <color name="team2">#ff2b2b</color>
+    <color name="team3">#1f1d9f</color>
+    <color name="team4">#ff4f0f</color>
+    <color name="team5">#efd111</color>
+    <color name="team6">#e040fb</color>
+    <color name="team7">#00e5ff</color>
+    <color name="team8">#757575</color>
+    <color name="button_enabled">#d880e7</color>
+    <color name="button_disabled">#424242</color>
+    <color name="dialogOverlay">#80000000</color>
+</resources>

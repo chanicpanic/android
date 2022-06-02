@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+
+    <string name="home_button1">New Game</string>
+
+    <string name="home_button2">Load Game</string>
+
+    <string name="Continue">Continue</string>
+
+    <string name="start">Start</string>
+
+    <string name="oneVone">1v1</string>
+
+    <string name="oneVoneVone">1v1v1</string>
+
+    <string name="twoVtwo">2v2</string>
+
+    <string name="custom">Custom</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="close">Close</string>
+
+    <string name="main_menu">Main Menu</string>
+
+    <string name="play_again">Play Again</string>
+
+    <string name="auto_play">Auto-play</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="load">Load</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="no">No</string>
+    <string name="ability_spotlight">Ability Spotlight</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="game_log">Game Log</string>
+    <string name="finish">Finish</string>
+    <string name="refresh">Refresh</string>
+    <string name="player_name">Player Name</string>
+
+</resources>

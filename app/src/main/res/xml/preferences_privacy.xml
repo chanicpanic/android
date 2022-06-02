@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.chanicpanic.chanicpanicmobile.settings.PrivacyPreference
+        android:key="@string/PREF_PRIVACY_KEY"
+        android:title="@string/privacy_policy"/>
+    <com.chanicpanic.chanicpanicmobile.settings.TermsPreference
+        android:key="@string/PREF_TERMS_KEY"
+        android:title="@string/terms"/>
+
+</androidx.preference.PreferenceScreen>

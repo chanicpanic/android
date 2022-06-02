@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources>
+    <string name="PREF_END_TURN_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.end</string>
+
+    <string name="PREF_CARD_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.card</string>
+
+    <string name="PREF_TRADER_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.trader</string>
+
+    <string name="PREF_ALLY_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.ally</string>
+
+    <string name="PREF_PANIC_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.panic</string>
+
+    <string name="PREF_SPECIAL_ABILITIES_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.specialAbilities</string>
+
+    <string name="PREF_SORT_HAND_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.handSort</string>
+
+    <string name="PREF_PRESENCE_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.presence</string>
+
+    <string name="PREF_PRIVACY_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.privacy</string>
+    <string name="PREF_TERMS_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.terms</string>
+    <string name="PREF_OPEN_SOURCE_KEY" translatable="false">com.chanicpanic.chanicpanicmobile.openSource</string>
+</resources>

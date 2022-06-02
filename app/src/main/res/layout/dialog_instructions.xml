@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutInstructions"
+    style="@style/AppTheme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/how_to_play" />
+
+    <ExpandableListView
+        android:id="@+id/listInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCloseInstructions"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/icon_close"
+        android:text="@string/close" />
+
+</android.widget.LinearLayout>

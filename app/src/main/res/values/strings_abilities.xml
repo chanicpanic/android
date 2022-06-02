@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="abilities">Abilities</string>
+    <string name="abilities_base">Base Abilities</string>
+    <string name="abilities_special">Special Abilities</string>
+
+    <string name="activated">activated</string>
+    <string name="gained">gained</string>
+    <string name="ability_points">points</string>
+
+    <string name="ability_name_trader">Trader</string>
+    <string name="ability_description_trader">Discard 2 cards: Draw 1 card.</string>
+    <string name="ability_commentary_trader">\"I always seem to get the bad end of the deal.\"</string>
+    <string name="discarded">discarded</string>
+
+    <string name="ability_name_ally">Ally</string>
+    <string name="ability_description_ally">Once per turn: Give a card from your hand to your next teammate.</string>
+    <string name="ability_commentary_ally">\"Here my friend, it is the best I have to offer.\"</string>
+    <string name="ally_log">gave 1 card to</string>
+
+    <string name="ability_name_panic">Panic</string>
+    <string name="ability_description_panic">Once per game: Discard all Spades you own and end your turn: All Spades controlled by your next opponent are discarded; You may not be attacked until the end of your next turn.</string>
+    <string name="ability_commentary_panic" tools:keep="@string/ability_commentary_panic">\"And don\'t forget the Peaceful Panic.\"</string>
+    <string name="panicked" tools:keep="@string/panicked">panicked</string>
+
+    <string name="ability_name_archaeologist">Archaeologist</string>
+    <string name="ability_description_archaeologist">Once per turn: Pay 4 points: Declare a suit; Discard the top card of the deck until a card of the declared suit is discarded or the deck runs out; Add the top card of the discard pile to your hand.</string>
+    <string name="ability_commentary_archaeologist" tools:keep="@string/ability_commentary_archaeologist">\"You must dig for your deepest desires.\"</string>
+
+    <string name="ability_name_assets">Assets</string>
+    <string name="ability_description_assets">During your Standby Phase: Gain 1 point for every 2 cards in your hand.</string>
+    <string name="ability_commentary_assets" tools:keep="@string/ability_commentary_assets">\"There is nothing to gain from holding back. On the contrary…\"</string>
+
+    <string name="ability_name_blessed">Blessed</string>
+    <string name="ability_description_blessed">During your Draw Phase: If you control fewer than 2 Hearts, draw 1 card.</string>
+    <string name="ability_commentary_blessed" tools:keep="@string/ability_commentary_blessed">\"Who gives favor to the heartless?\"</string>
+
+    <string name="ability_name_combiner">Combiner</string>
+    <string name="ability_description_combiner">Twice per turn: Discard 2 Clubs: Draw 3 cards; Your Last Club is treated as the total value of the discarded Clubs.</string>
+    <string name="ability_commentary_combiner" tools:keep="@string/ability_commentary_combiner">\"Few have discovered the power of raising the Club.\"</string>
+
+    <string name="ability_name_club_member">Club Member</string>
+    <string name="ability_description_club_member">When you play a Club: You may play any number of cards whose total value is less than or equal to the value of the Club.</string>
+    <string name="ability_commentary_club_member" tools:keep="@string/ability_commentary_club_member">\"How is he still going?\"</string>
+
+    <string name="ability_name_direct_hitter">Direct Hitter</string>
+    <string name="ability_description_direct_hitter">If the defender controls 2 or more Diamonds, your bypass attack power is 75%.</string>
+    <string name="ability_commentary_direct_hitter" tools:keep="@string/ability_commentary_direct_hitter">\"Even when you are strong, you are weak.\"</string>
+
+    <string name="ability_name_fulfilled">Fulfilled</string>
+    <string name="ability_description_fulfilled">During your Draw Phase: If you hold 5 or more cards, do not draw; Otherwise, draw until you hold 5 cards.</string>
+    <string name="ability_commentary_fulfilled" tools:keep="@string/ability_commentary_fulfilled">\"I only ask for enough.\"</string>
+
+    <string name="ability_name_gambler">Gambler</string>
+    <string name="ability_description_gambler">Twice per turn: Discard 1 card: Discard the top card of the deck; If the deck card has a lower value than the card from your hand, draw 2 cards.</string>
+    <string name="ability_commentary_gambler" tools:keep="@string/ability_commentary_gambler">\"Does it pay off? As long as there are cards to count.\"</string>
+
+    <string name="ability_name_haggler">Haggler</string>
+    <string name="ability_description_haggler">The costs of Utility Cards you hold are reduced by 1.</string>
+    <string name="ability_commentary_haggler" tools:keep="@string/ability_commentary_haggler">\"That\'s my final offer. I won\'t pay a cent more.\"</string>
+
+    <string name="ability_name_healthy">Healthy</string>
+    <string name="ability_description_healthy">The values of Hearts you control are increased by 1.</string>
+    <string name="ability_commentary_healthy" tools:keep="@string/ability_commentary_healthy">\"An apple a day keeps the bypass away.\"</string>
+
+    <string name="ability_name_hopeful">Hopeful</string>
+    <string name="ability_description_hopeful">Pay 4 points: Draw 1 card; If it is a Heart, you may immediately play it for free.</string>
+    <string name="ability_commentary_hopeful" tools:keep="@string/ability_commentary_hopeful">\"I trust in the Heart of the Deck.\"</string>
+
+    <string name="ability_name_indebted">Indebted</string>
+    <string name="ability_description_indebted">Once per turn: Pay 4 points: Play a Utility Card for free; You may not play any more cards this turn.</string>
+    <string name="ability_commentary_indebted" tools:keep="@string/ability_commentary_indebted">\"I am only asking for a small loan. I promise I will pay you back in full…\"</string>
+
+    <string name="ability_name_investor">Investor</string>
+    <string name="ability_description_investor">During your Standby Phase: Gain 2 points for each Diamond and Spade you control.</string>
+    <string name="ability_commentary_investor" tools:keep="@string/ability_commentary_investor">\"Natural Diamonds are always increasing in value.\"</string>
+
+    <string name="ability_name_large_capacity">Large Capacity</string>
+    <string name="ability_description_large_capacity">Your full hand is 12 cards. During your Draw Phase: Draw 1 card for every 4 cards in your hand.</string>
+    <string name="ability_commentary_large_capacity" tools:keep="@string/ability_commentary_large_capacity">\"If they want it, they\'ll have to get it from me.\"</string>
+
+    <string name="ability_name_lifeline">Lifeline</string>
+    <string name="ability_description_lifeline">While you only control 1 Heart, you cannot be bypassed.</string>
+    <string name="ability_commentary_lifeline" tools:keep="@string/ability_commentary_lifeline">\"You\'re finished!\"\n\"Check again.\"</string>
+
+    <string name="ability_name_loaded">Loaded</string>
+    <string name="ability_description_loaded">Pay 12 points: Draw until you have a full hand; You may not play any more cards this turn.</string>
+    <string name="ability_commentary_loaded" tools:keep="@string/ability_commentary_loaded">\"He is too big to fail.\"</string>
+
+    <string name="ability_name_manipulator">Manipulator</string>
+    <string name="ability_description_manipulator">Once per turn: Pay 3 points: Draw 1 card; Place a card from your hand on the top of the deck.</string>
+    <string name="ability_commentary_manipulator" tools:keep="@string/ability_commentary_manipulator">\"I hope you enjoy your gift.\"</string>
+
+    <string name="ability_name_maximizer">Maximizer</string>
+    <string name="ability_description_maximizer">Pay 3 points: Return a card you control to your hand: Play a card of the same suit for free that costs up to 3 points more.</string>
+    <string name="ability_commentary_maximizer" tools:keep="@string/ability_commentary_maximizer">\"We must do away with the old to make space for the new.\"</string>
+
+    <string name="ability_name_options">Options</string>
+    <string name="ability_description_options">Skip your Draw Phase: Gain 6 points during your Standby Phase.</string>
+    <string name="ability_commentary_options" tools:keep="@string/ability_commentary_options">\"I know my priorities.\"</string>
+
+    <string name="ability_name_pacifist">Pacifist</string>
+    <string name="ability_description_pacifist">Thrice per turn: Discard a Spade: Draw 1 card.</string>
+    <string name="ability_commentary_pacifist" tools:keep="@string/ability_commentary_pacifist">\"They don\'t need my help. They will destroy themselves.\"</string>
+
+    <string name="ability_name_plagued">Plagued</string>
+    <string name="ability_description_plagued">Once per turn: Pay 4 points: Discard 1 card: All cards on a board with a base value equal to the discarded card\'s base value are discarded.</string>
+    <string name="ability_commentary_plagued" tools:keep="@string/ability_commentary_plagued">\"I used to think I was cursed.\"</string>
+
+    <string name="ability_name_purifier">Purifier</string>
+    <string name="ability_description_purifier">Once per turn: Discard all the cards in your hand: Draw 1 card for each discarded; Shuffle the discard pile into the deck.</string>
+    <string name="ability_commentary_purifier" tools:keep="@string/ability_commentary_purifier">\"I must cleanse myself often, lest I am rendered useless.\"</string>
+
+    <string name="ability_name_resourceful">Resourceful</string>
+    <string name="ability_description_resourceful">The values of Clubs you play are increased by 2.</string>
+    <string name="ability_commentary_resourceful" tools:keep="@string/ability_commentary_resourceful">\"I will always find a way.\"</string>
+
+    <string name="ability_name_seer">Seer</string>
+    <string name="ability_description_seer">The top card of the deck is visible to you.</string>
+    <string name="ability_commentary_seer" tools:keep="@string/ability_commentary_seer">\"Who needs luck?\"</string>
+
+    <string name="ability_name_seller">Seller</string>
+    <string name="ability_description_seller">Once per turn: Discard up to 3 Utility Cards: Gain points equal to half the cards\' total value; Draw 1 card for every 2 discarded.</string>
+    <string name="ability_commentary_seller" tools:keep="@string/ability_commentary_seller">\"Success is a matter of inventory.\"</string>
+
+    <string name="ability_name_standardization">Standardization</string>
+    <string name="ability_description_standardization">All Clubs you play allow you to draw 2 cards.</string>
+    <string name="ability_commentary_standardization" tools:keep="@string/ability_commentary_standardization">\"It would be much simpler if it were all the same.\"</string>
+
+    <string name="ability_name_toughness">Toughness</string>
+    <string name="ability_description_toughness">The values of Diamonds you control are increased by 1.</string>
+    <string name="ability_commentary_toughness" tools:keep="@string/ability_commentary_toughness">\"I won\'t go down that easily.\"</string>
+
+    <string name="ability_name_trade_master">Trade Master</string>
+    <string name="ability_description_trade_master">Once per turn: Discard 1 card: Draw 2 cards; Discard 1 card.</string>
+    <string name="ability_commentary_trade_master" tools:keep="@string/ability_commentary_trade_master">\"He always seems to get the good end of the deal.\"</string>
+
+    <string name="ability_name_wealth">Wealth</string>
+    <string name="ability_description_wealth">During your Standby Phase: Gain 3 points.</string>
+    <string name="ability_commentary_wealth" tools:keep="@string/ability_commentary_wealth">\"I was born this way.\"</string>
+
+    <string name="ability_name_warrior">Warrior</string>
+    <string name="ability_description_warrior">The values of Spades you control are increased by 1.</string>
+    <string name="ability_commentary_warrior" tools:keep="@string/ability_commentary_warrior">\"Target terminated.\"</string>
+
+</resources>

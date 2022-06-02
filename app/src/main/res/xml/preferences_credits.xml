@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/licenses">
+
+        <Preference
+            android:key="@string/PREF_OPEN_SOURCE_KEY"
+            android:title="@string/open_source"/>
+
+        <com.chanicpanic.chanicpanicmobile.settings.FlaskLicense android:title="com.github.QuadFlask:colorpicker" />
+        <com.chanicpanic.chanicpanicmobile.settings.MaterialLicense android:title="Google Material Design Icons" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

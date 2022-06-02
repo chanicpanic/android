@@ -1,0 +1,15 @@
+<!--
+  ~ Copyright (c) chanicpanic 2022
+  -->
+
+<vector android:height="24dp"
+    android:viewportHeight="256"
+    android:viewportWidth="256"
+    android:width="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillAlpha="1"
+        android:fillColor="#ff0000"
+        android:pathData="M110.519,233.886C88.427,209.166 64.612,182.407 31.386,144.97L7.82,118.418 7.522,115.16C7.359,113.368 7.223,99.105 7.221,83.465L7.219,55.027 22.107,28.034 36.996,1.042 67.236,1.024 97.477,1.006 112.479,27.57c8.251,14.61 15.246,26.642 15.546,26.738 0.652,0.209 2.857,-3.597 18.38,-31.72L158.317,1.005h30.518,30.518l15.118,26.734 15.118,26.734v31.405,31.404l-22.261,25.927c-50.532,58.855 -96.722,112.019 -97.324,112.019 -0.225,0 -8.994,-9.605 -19.485,-21.344z"
+        android:strokeWidth="0.46924785" />
+</vector>
