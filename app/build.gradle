@@ -28,12 +28,12 @@ android {
         }
     }
 
-    compileSdkVersion 31
+    compileSdk 34
     defaultConfig {
         multiDexEnabled true
         applicationId "com.chanicpanic.chanicpanicmobile"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 34
         versionCode 102
         versionName "1.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
