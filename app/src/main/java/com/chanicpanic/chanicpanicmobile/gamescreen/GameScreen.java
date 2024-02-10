@@ -288,7 +288,7 @@ public class GameScreen extends AppCompatActivity {
 
             background.setShape(GradientDrawable.RECTANGLE);
             background.setGradientType(GradientDrawable.RADIAL_GRADIENT);
-            background.setGradientRadius(getResources().getDimension(R.dimen._230sdp));
+            background.setGradientRadius(getResources().getDimension(com.intuit.sdp.R.dimen._230sdp));
             teamBackgrounds.add(background);
 
         }

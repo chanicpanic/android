@@ -13,7 +13,6 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SwitchCompat;
@@ -24,6 +23,7 @@ import com.chanicpanic.chanicpanicmobile.game.Attack;
 import com.chanicpanic.chanicpanicmobile.game.Board;
 import com.chanicpanic.chanicpanicmobile.game.Card;
 import com.chanicpanic.chanicpanicmobile.game.Game;
+import com.intuit.sdp.BuildConfig;
 
 import java.util.EnumSet;
 
@@ -54,21 +54,21 @@ public class BoardFragment extends Fragment {
         heartBackground.setColors(new int[]{0xffffffff, 0xffff0000});
         heartBackground.setGradientType(GradientDrawable.RADIAL_GRADIENT);
         heartBackground.setShape(GradientDrawable.RECTANGLE);
-        heartBackground.setGradientRadius(context.getResources().getDimension(R.dimen._115sdp));
+        heartBackground.setGradientRadius(context.getResources().getDimension(com.intuit.sdp.R.dimen._115sdp));
 
         diamondBackground = new GradientDrawable();
         diamondBackground.setStroke((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, context.getResources().getDisplayMetrics()), Color.BLACK);
         diamondBackground.setColors(new int[]{0xffffffff, 0xff0400ff});
         diamondBackground.setGradientType(GradientDrawable.RADIAL_GRADIENT);
         diamondBackground.setShape(GradientDrawable.RECTANGLE);
-        diamondBackground.setGradientRadius(context.getResources().getDimension(R.dimen._115sdp));
+        diamondBackground.setGradientRadius(context.getResources().getDimension(com.intuit.sdp.R.dimen._115sdp));
 
         spadeBackground = new GradientDrawable();
         spadeBackground.setStroke((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, context.getResources().getDisplayMetrics()), Color.BLACK);
         spadeBackground.setColors(new int[]{0xffffffff, 0xff000000});
         spadeBackground.setGradientType(GradientDrawable.RADIAL_GRADIENT);
         spadeBackground.setShape(GradientDrawable.RECTANGLE);
-        spadeBackground.setGradientRadius(context.getResources().getDimension(R.dimen._115sdp));
+        spadeBackground.setGradientRadius(context.getResources().getDimension(com.intuit.sdp.R.dimen._115sdp));
     }
 
     /**
