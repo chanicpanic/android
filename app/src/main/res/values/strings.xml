@@ -6,11 +6,11 @@
 
     <string name="app_name" translatable="false">Chanic Panic</string>
 
-    <string name="version">version 1.1.0</string>
+    <string name="version">version 1.1.1</string>
 
     <string name="chanic_panic_trademarked" translatable="false">Chanic Panic™</string>
 
-    <string name="copyright_notice" translatable="false">©2022</string>
+    <string name="copyright_notice" translatable="false">©2024</string>
 
     <string name="hearts">Hearts</string>
 
